@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Notes.Domain;
-using NotesApplication.interfaces;
+using Notes.Application.Interfaces;
 using Notes.Persistance.EntityTypeConfigurations;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace Notes.Persistance
         public DbSet <Note> Notes { get; set;}
         public NotesDbContext(DbContextOptions<NotesDbContext> options)
             : base(options) { }
-        protected override void OnModelCreatting(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new NoteConfigurations());
             base.OnModelCreating(builder);

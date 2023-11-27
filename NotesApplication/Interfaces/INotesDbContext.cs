@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Notes.Domain;
 
-namespace NotesApplication.interfaces
+namespace Notes.Application.Interfaces
 {
     public interface INotesDbContext
     {
