@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notes.Persistance\Notes.Persistance.csproj" />
+    <ProjectReference Include="..\NotesApplication\Notes.Application.csproj" />
+  </ItemGroup>
+
 </Project>
