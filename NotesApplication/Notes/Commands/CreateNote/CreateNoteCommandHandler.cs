@@ -11,12 +11,12 @@ using Notes.Domain;
 namespace Notes.Application.Notes.Commands.CreateNote
 {
     public class CreateNoteCommandHandler
-        : IRequestHandler<CreateNoteCommands,Guid>
+        : IRequestHandler<CreateNoteCommand,Guid>
     {
         private readonly INotesDbContext _dbContext;
         public CreateNoteCommandHandler(INotesDbContext dbContext) =>
             _dbContext = dbContext;
-        public async Task<Guid> Handle(CreateNoteCommands request,
+        public async Task<Guid> Handle(CreateNoteCommand request,
             CancellationToken cancellationToken)
         {
             var note = new Note

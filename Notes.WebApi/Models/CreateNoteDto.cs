@@ -3,13 +3,13 @@ using Notes.Application.Common.Mappings;
 using AutoMapper;
 namespace Notes.WebApi.Models
 {
-    public class CreateNoteDto : IMapWith<CreateNoteCommands>
+    public class CreateNoteDto : IMapWith<CreateNoteCommand>
     {
         public string Title { get; set; }
         public string Details { get; set; }
         public void Mapping(Profile profile) 
         {
-            profile.CreateMap<CreateNoteDto, CreateNoteCommands>()
+            profile.CreateMap<CreateNoteDto, CreateNoteCommand>()
                 .ForMember(noteCommand => noteCommand.Title,
                 opt => opt.MapFrom(noteDto => noteDto.Title))
                 .ForMember(noteCommand => noteCommand.Details,

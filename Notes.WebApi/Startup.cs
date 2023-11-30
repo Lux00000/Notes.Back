@@ -4,6 +4,7 @@ using Notes.Application.Interfaces;
 using Notes.Application;
 using Notes.Persistance;
 using Microsoft.Extensions.Configuration;
+using Notes.WebApi.Middleware;
 namespace Notes.WebApi
 {
     public class Startup
@@ -39,6 +40,7 @@ namespace Notes.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
