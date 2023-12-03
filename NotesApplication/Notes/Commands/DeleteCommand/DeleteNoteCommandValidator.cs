@@ -7,7 +7,7 @@ using FluentValidation;
 
 namespace Notes.Application.Notes.Commands.DeleteCommand
 {
-    internal class DeleteNoteCommandValidator : AbstractValidator<DeleteNoteCommand>
+    public class DeleteNoteCommandValidator : AbstractValidator<DeleteNoteCommand>
     {
         public DeleteNoteCommandValidator() 
         {

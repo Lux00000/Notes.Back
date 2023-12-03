@@ -41,7 +41,7 @@ namespace Notes.Tests.Common
                     CreationDate = DateTime.Today,
                     Details = "Details2",
                     EditDate = null,
-                    Id = Guid.Parse("{8DBA5D7B-0269-4F8F-B8A6-44E0E88267FC}"),
+                    Id = Guid.Parse("8DBA5D7B-0269-4F8F-B8A6-44E0E88267FC"),
                     Title = "Title2",
                     UserId = UserBId
                 },
