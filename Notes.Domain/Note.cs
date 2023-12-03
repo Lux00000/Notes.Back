@@ -16,4 +16,5 @@ namespace Notes.Domain
         public DateTime? EditDate { get; set; }
 
     }
+
 }
